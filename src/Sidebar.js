@@ -24,7 +24,7 @@ function Sidebar() {
         <TwitterIcon/>
 
 
-        <SidebarOption Icon={HomeIcon} text="Home"/>
+        <SidebarOption active Icon={HomeIcon} text="Home"/>
         <SidebarOption Icon={TagIcon} text="Explore"/>
         <SidebarOption Icon={NotificationsIcon} text="Notifications"/>
         <SidebarOption Icon={EmailIcon} text="Messages"/>
