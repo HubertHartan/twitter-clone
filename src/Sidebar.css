@@ -1,7 +1,16 @@
 .sidebar__tweet{
+
+     /*!important tag is there to override the default colour of the button set by mui*/
     background-color: var(--twitter-color) !important;
     border: none !important;
     color: white !important;
     font-weight: bold !important;
-    /*!important tag is there to override the default colour of the button set by mui*/
+    border-radius: 30px !important;
+    height: 50px !important;
+    margin-top: 20px !important;
+    text-transform: inherit !important;
+   /*inherit is a keyword that inherits the specified property from the parent which is default settings
+   as compared to mui format*/
+
+    
 }
