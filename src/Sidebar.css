@@ -1,0 +1,7 @@
+.sidebar__tweet{
+    background-color: var(--twitter-color) !important;
+    border: none !important;
+    color: white !important;
+    font-weight: bold !important;
+    /*!important tag is there to override the default colour of the button set by mui*/
+}

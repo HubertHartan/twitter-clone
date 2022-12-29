@@ -14,13 +14,13 @@ import BookmarkIcon from '@mui/icons-material/Bookmark';
 import FormatListBulletedIcon from '@mui/icons-material/FormatListBulleted';
 import PersonOutlineIcon from '@mui/icons-material/PersonOutline';
 import MoreHorizIcon from '@mui/icons-material/MoreHoriz';
-
+import {Button} from '@mui/material';
 
 
 function Sidebar() {
   return (
     <div className="sidebar">
-        {/* Twitter Icon */} 
+       
         <TwitterIcon/>
 
 
@@ -34,7 +34,7 @@ function Sidebar() {
         <SidebarOption Icon={MoreHorizIcon} text="More"/>
         
  
-        {/* Button that says Tweet */}
+        <Button variant="outlined" className="sidebar__tweet" fullWidth>Tweet</Button>
         
     </div>
   )
