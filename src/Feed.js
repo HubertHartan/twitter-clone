@@ -5,8 +5,21 @@ function Feed() {
     <div>
       {/*Header*/}
       <h2>Home</h2>
-      {/*  */}
 
+      {/*TweetBox*/}
+
+      {/* Post */}
+      {/* Post */}
+      {/* Post */}
+      {/* Post */}
+      {/* Post */}
+      {/* Post */}
+      {/* Post */}
+      {/* Post */}
+      {/* Post */}
+      {/* Post */}
+      {/* Post */}
+      
     </div>
   )
 }
