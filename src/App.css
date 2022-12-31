@@ -3,3 +3,7 @@ body{
     --twitter-background: #e6ecf0;
     --twitter-hover: #e8f5fe;
 }
+
+.app{
+    display: flex;
+}
