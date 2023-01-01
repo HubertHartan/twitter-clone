@@ -10,8 +10,10 @@ function TweetBox() {
         <form>
             <div className='tweetBox__input'>
                 <Avatar src="https://upload.wikimedia.org/wikipedia/commons/1/11/Canis_lupus_familiaris.002_-_Monfero.jpg"/>
-                {/* Credits to https://upload.wikimedia.org/wikipedia/commons/1/11/Canis_lupus_familiaris.002_-_Monfero.jpg for the hardcoded profile */}
+                {/* Credits to https://upload.wikimedia.org/wikipedi
+                a/commons/1/11/Canis_lupus_familiaris.002_-_Monfero.jpg for the hardcoded profile */}
                 <input placeholder="What's happening?" type="text"/>
+                {/* <input placeholder="Enter image URL" type="text"/> */}
             </div>
 
             <Button>
