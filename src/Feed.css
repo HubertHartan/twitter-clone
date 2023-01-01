@@ -1,0 +1,35 @@
+.feed{
+    flex: 0.4;
+    border-right: 1px solid var(--twitter-background);
+    min-width: fit-content;
+    /*Whatever size the post is in the container it must fit into the minimum width*/
+    overflow-y: scroll;
+    /*Adds a scrolling property if the content overflows in the y-axis*/
+
+    -ms-overflow-style: none;
+    /*Hides scrollbar for IE*/
+    scrollbar-width: none;
+     /*Hides scrollbar for Firefox*/
+}
+
+/*Hides scrollbar for Chrome, Safari, Opera, and Edge*/
+.feed::-webkit-scrollbar{
+    display: none;
+}
+
+.feed__header{
+    position: sticky;
+    /*Sticks the header in it's position*/
+    top: 0;
+    /*Sets the header at the top of the screen*/
+    background-color: white;
+    z-index: 100;
+    /*The position of the element in the background of the screen, the higher the number the more frontal its position*/
+    border: 1px solid var(--twitter-background);
+    padding: 15px 20px;
+}
+
+.feed__header > h2{
+    font-size: 20px;
+    font-weight: 800;
+}
