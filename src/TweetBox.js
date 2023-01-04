@@ -13,9 +13,13 @@ function TweetBox() {
                 {/* Credits to https://upload.wikimedia.org/wikipedi
                 a/commons/1/11/Canis_lupus_familiaris.002_-_Monfero.jpg for the hardcoded profile */}
                 <input placeholder="What's happening?" type="text"/>
-                {/* <input placeholder="Enter image URL" type="text"/> */}
+                
             </div>
-
+            
+            
+            <input className='tweetBox__imageInput' placeholder="Enter image URL" type="text"/> 
+            
+            
             <Button className='tweetBox__button'>
                 Tweet
             </Button>
