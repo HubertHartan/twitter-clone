@@ -17,7 +17,7 @@ function TweetBox() {
             </div>
             
             
-            <input className='tweetBox__imageInput' placeholder="Enter image URL" type="text"/> 
+            <input className='tweetBox__imageInput' placeholder="Optional: Enter image URL" type="text"/> 
             
             
             <Button className='tweetBox__button'>
