@@ -15,17 +15,7 @@ function Feed() {
       {/*TweetBox*/}
       <TweetBox/>
 
-      {/* Post */}
-      {/* Post */}
-      {/* Post */}
-      {/* Post */}
-      {/* Post */}
-      {/* Post */}
-      {/* Post */}
-      {/* Post */}
-      {/* Post */}
-      {/* Post */}
-      {/* Post */}
+      
       
     </div>
   )
