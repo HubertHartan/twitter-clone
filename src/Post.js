@@ -1,6 +1,7 @@
 import React from 'react';
 import './Post.css';
 import {Avatar} from '@mui/material';
+import VerifiedUserIcon from '@mui/icons-material/VerifiedUser';
 
 function Post({
     avatar,
@@ -18,7 +19,15 @@ function Post({
         </div>
 
         <div className='post__body'>
-
+          <div className='post__header'>
+            <div className='post__headerText'>
+              <h3>
+                Hubert Hartan <span>
+                  <VerifiedUserIcon className='post__badge'/>
+                </span>
+              </h3>
+            </div>
+          </div>
         </div>
 
     </div>
