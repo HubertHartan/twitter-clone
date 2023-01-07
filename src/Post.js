@@ -20,7 +20,9 @@ function Post({
         </div>
 
         <div className='post__body'>
+
           <div className='post__header'>
+            
             <div className='post__headerText'>
               <h3>
                 Hubert Hartan {" "}
@@ -36,7 +38,13 @@ function Post({
               </p>
             </div>
           </div>
+
           <img src="https://media2.giphy.com/media/iJDJbzZcsLvCXm7RXf/giphy.gif?cid=ecf05e47592bd9f5c65ad38086d4125738953e9c833d4f1a&rid=giphy.gif&ct=s" alt="placeholder"/>
+
+          <div className='post__footer'>
+
+          </div>
+
         </div>
 
     </div>
