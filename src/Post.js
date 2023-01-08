@@ -1,7 +1,14 @@
 import React from 'react';
 import './Post.css';
+
+
 import {Avatar} from '@mui/material';
 import VerifiedUserIcon from '@mui/icons-material/VerifiedUser';
+import ChatBubbleOutlineIcon from '@mui/icons-material/ChatBubbleOutline';
+import RepeatIcon from '@mui/icons-material/Repeat';
+import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
+import PublishIcon from '@mui/icons-material/Publish';
+
 import { ImageSharp } from '@mui/icons-material';
 
 function Post({
@@ -42,7 +49,10 @@ function Post({
           <img src="https://media2.giphy.com/media/iJDJbzZcsLvCXm7RXf/giphy.gif?cid=ecf05e47592bd9f5c65ad38086d4125738953e9c833d4f1a&rid=giphy.gif&ct=s" alt="placeholder"/>
 
           <div className='post__footer'>
-
+            <ChatBubbleOutlineIcon fontSize="small"/>
+            <RepeatIcon fontSize="small"/>
+            <FavoriteBorderIcon fontSize="small"/>
+            <PublishIcon fontSize="small"/>
           </div>
 
         </div>
