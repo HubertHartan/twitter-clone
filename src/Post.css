@@ -5,6 +5,11 @@
     padding-bottom: 10px;
 }
 
+.post__badge{
+    font-size: 14px !important;
+    color: var(--twitter-color);
+}
+
 .post__body > img{
     border-radius: 20px;
 }
