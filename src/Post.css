@@ -5,6 +5,18 @@
     padding-bottom: 10px;
 }
 
+
+.post__headerSpecial{
+    font-weight: 600;
+    font-size: 12px;
+    color: gray;
+}
+
+.post__headerText > h3{
+    font-size: 15px;
+    margin-bottom: 5px;
+}
+
 .post__badge{
     font-size: 14px !important;
     color: var(--twitter-color);
@@ -20,8 +32,3 @@
     margin-top: 10px;
 }
 
-.post__headerSpecial{
-    font-weight: 600;
-    font-size: 12px;
-    color: gray;
-}
