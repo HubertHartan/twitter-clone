@@ -33,7 +33,7 @@ function Post({
             <div className='post__headerText'>
               <h3>
                 Hubert Hartan {" "}
-                <span>
+                <span className="post__headerSpecial">
                   <VerifiedUserIcon className='post__badge'/> @huberthartan
                 </span>
               </h3>

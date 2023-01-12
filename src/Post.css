@@ -19,3 +19,9 @@
     justify-content: space-between;
     margin-top: 10px;
 }
+
+.post__headerSpecial{
+    font-weight: 600;
+    font-size: 12px;
+    color: gray;
+}
