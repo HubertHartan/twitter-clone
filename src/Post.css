@@ -17,6 +17,12 @@
     margin-bottom: 5px;
 }
 
+.post__headerDesc{
+    margin-bottom: 10px;
+    font-size: 15px;
+}
+
+
 .post__badge{
     font-size: 14px !important;
     color: var(--twitter-color);
