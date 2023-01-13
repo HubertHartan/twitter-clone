@@ -28,6 +28,11 @@
     color: var(--twitter-color);
 }
 
+.post__body{
+    flex: 1;
+    padding: 10px;
+}
+
 .post__body > img{
     border-radius: 20px;
 }
@@ -38,3 +43,6 @@
     margin-top: 10px;
 }
 
+.post__avatar{
+    padding: 20px;
+}
