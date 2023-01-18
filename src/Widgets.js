@@ -11,7 +11,7 @@ function Widgets() {
   return (
     <div className='widgets'>
       <div className="widgets__input">
-
+        <h2>Widgets</h2>
       </div>
 
     </div>
