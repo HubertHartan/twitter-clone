@@ -15,6 +15,9 @@ function Widgets() {
         <input placeholder="Search Twitter" type="text"/>
       </div>
 
+      <div className="widgets__widgetContainer">
+
+      </div>
     </div>
   )
 }
