@@ -11,3 +11,8 @@
     margin-top: 10px;
     margin-left: 20px;
 }
+
+.widgets__input > input{
+    border:none;
+    background-color: var(--twitter-background);
+}
