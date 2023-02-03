@@ -41,7 +41,7 @@ function Post({
 
             <div className='post__headerDesc'>
               <p>
-                I'm challenging myself to build a twitter clone.
+                {text}
               </p>
             </div>
           </div>
