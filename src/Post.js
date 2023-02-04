@@ -23,7 +23,7 @@ function Post({
   return (
     <div className='post'>
         <div className='post__avatar'>
-            <Avatar  src="https://upload.wikimedia.org/wikipedia/commons/1/11/Canis_lupus_familiaris.002_-_Monfero.jpg"/>
+            <Avatar  src={avatar}/>
         </div>
 
         <div className='post__body'>
@@ -32,9 +32,9 @@ function Post({
             
             <div className='post__headerText'>
               <h3>
-                Hubert Hartan {" "}
+                {displayname} {" "}
                 <span className="post__headerSpecial">
-                  <VerifiedUserIcon className='post__badge'/> @huberthartan
+                  {verified && <VerifiedUserIcon className='post__badge'/>} @{username}
                 </span>
               </h3>
             </div>
@@ -46,7 +46,7 @@ function Post({
             </div>
           </div>
 
-          <img src="https://media4.giphy.com/media/IQxvdHgfat9ENGJbEm/giphy.gif?cid=ecf05e4755ffed6f1486a0063182c1ca521ed00a4629ad08&rid=giphy.gif&ct=g" alt="placeholder"/>
+          <img src={image} alt="placeholder"/>
 
           <div className='post__footer'>
             <ChatBubbleOutlineIcon fontSize="small"/>
