@@ -8,7 +8,7 @@ import './Feed.css';
 function Feed() {
 
   const [posts, setPost] = useState([]);
-
+  //states
   return (
     <div className='feed'>
       {/*Header*/}
