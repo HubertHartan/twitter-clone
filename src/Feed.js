@@ -3,15 +3,20 @@ import React, {useState, useEffect} from 'react'
 import TweetBox from './TweetBox';
 import Post from './Post';
 import './Feed.css';
-import db from './firebase';
+import {db} from './firebaseConfig';
 
 function Feed() {
 
-  const [posts, setPost] = useState([]);
+  const [posts, setPosts] = useState([]);
+
   useEffect(()=>{
+    try{db.collection("posts").onSnapshot((snapshot) => 
+      setPosts(snapshot.docs.map((doc) => doc.data()))
+    );
+  }catch(err){
+    console.error(err);
+  }},[])
 
-
-  })
   return (
     <div className='feed'>
       
@@ -22,21 +27,16 @@ function Feed() {
     
       <TweetBox/>
 
-      <Post
-      displayname="Hubert Hartan"
-      username="huberthartan"
-      verified
-      text="ITS WORKING"
-      avatar="https://upload.wikimedia.org/wikipedia/commons/1/11/Canis_lupus_familiaris.002_-_Monfero.jpg"
-      image="https://media4.giphy.com/media/IQxvdHgfat9ENGJbEm/giphy.gif?cid=ecf05e4755ffed6f1486a0063182c1ca521ed00a4629ad08&rid=giphy.gif&ct=g"
-      />
-      <Post/>
-      <Post/>
-      <Post/>
-      <Post/>
-      <Post/>
-      <Post/>
-      <Post/>
+      {posts.map((post) => (
+        <Post
+        displayname={post.displayname}
+        username={post.username}
+        verified={post.verified}
+        text={post.text}
+        avatar={post.avatar}
+        image={post.image}
+        />
+      ))}
       
     </div>
   )

@@ -17,8 +17,7 @@ function Post({
     username,
     verified,
     text,
-    image,
-    timestamp
+    image
 }) {
   return (
     <div className='post'>
