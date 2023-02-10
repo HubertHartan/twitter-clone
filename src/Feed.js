@@ -9,6 +9,7 @@ function Feed() {
 
   const [posts, setPosts] = useState([]);
 
+  //Investigate browser console logs and find the correct method of rendering posts
   useEffect(()=>{
     try{db.collection("posts").onSnapshot((snapshot) => 
       setPosts(snapshot.docs.map((doc) => doc.data()))
@@ -16,6 +17,9 @@ function Feed() {
   }catch(err){
     console.error(err);
   }},[])
+
+
+
 
   return (
     <div className='feed'>
