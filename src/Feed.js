@@ -1,27 +1,30 @@
-import React, {useState} from 'react'
+import React, {useState, useEffect} from 'react'
 
 import TweetBox from './TweetBox';
 import Post from './Post';
 import './Feed.css';
-
+import db from './firebase';
 
 function Feed() {
 
   const [posts, setPost] = useState([]);
-  //states
+  useEffect(()=>{
+
+
+  })
   return (
     <div className='feed'>
-      {/*Header*/}
+      
       <div className='feed__header'>
         <h2>Home</h2>
       </div>
-
-      {/*TweetBox*/}
+      
+    
       <TweetBox/>
 
       <Post
       displayname="Hubert Hartan"
-      username="@huberthartan"
+      username="huberthartan"
       verified
       text="ITS WORKING"
       avatar="https://upload.wikimedia.org/wikipedia/commons/1/11/Canis_lupus_familiaris.002_-_Monfero.jpg"

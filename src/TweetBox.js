@@ -23,7 +23,7 @@ function TweetBox() {
             <Button className='tweetBox__button'>
                 Tweet
             </Button>
-            {/*Tweet button*/}
+            
         </form>
     </div>
   )
