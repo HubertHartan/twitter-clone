@@ -5,6 +5,7 @@ import Post from './Post';
 import './Feed.css';
 import {db} from './firebaseConfig';
 //import firebase collection library here
+//
 function Feed() {
 
   const [posts, setPosts] = useState([]);
