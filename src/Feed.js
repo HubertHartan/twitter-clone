@@ -5,11 +5,13 @@ import Post from './Post';
 import './Feed.css';
 import {db} from './firebaseConfig';
 import {collection, addDoc} from 'firebase/firesote';
+
 function Feed() {
 
   const [posts, setPosts] = useState([]);
 
   //Investigate browser console logs and find the correct method of rendering posts
+  //incorrect and outdated methods used in current implementation
   useEffect(()=>{
     try{db.collection("posts").onSnapshot((snapshot) => 
       setPosts(snapshot.docs.map((doc) => doc.data()))
