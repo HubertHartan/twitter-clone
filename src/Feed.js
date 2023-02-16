@@ -12,6 +12,7 @@ function Feed() {
 
   //Investigate browser console logs and find the correct method of rendering posts
   //incorrect and outdated methods used in current implementation
+  //test
   useEffect(()=>{
     try{db.collection("posts").onSnapshot((snapshot) => 
       setPosts(snapshot.docs.map((doc) => doc.data()))
