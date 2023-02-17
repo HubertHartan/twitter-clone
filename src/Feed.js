@@ -4,7 +4,7 @@ import TweetBox from './TweetBox';
 import Post from './Post';
 import './Feed.css';
 import {db} from './firebaseConfig';
-import {collection, addDoc} from 'firebase/firesote';
+import {collection, addDoc} from 'firebase/firestore';
 
 function Feed() {
 
@@ -13,6 +13,8 @@ function Feed() {
   //Investigate browser console logs and find the correct method of rendering posts
   //incorrect and outdated methods used in current implementation
   //test
+
+
   useEffect(()=>{
     try{db.collection("posts").onSnapshot((snapshot) => 
       setPosts(snapshot.docs.map((doc) => doc.data()))
