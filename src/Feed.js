@@ -14,7 +14,7 @@ function Feed() {
   //incorrect and outdated methods used in current implementation
   //test
 
-
+  const postRef = collection(db,"posts")
   useEffect(()=>{
     try{db.collection("posts").onSnapshot((snapshot) => 
       setPosts(snapshot.docs.map((doc) => doc.data()))
