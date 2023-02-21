@@ -17,7 +17,11 @@ function Feed() {
   const postRef = collection(db,"posts")
   //check how to map collection
   
-  //postRef.onSnapshot(....)
+  /*postRef.onSnapshot((snapshot) =>
+    setPosts(snapshot.docs.map((doc) => doc.data()))
+    );
+
+  */
   useEffect(()=>{
     try{db.collection("posts").onSnapshot((snapshot) => 
       setPosts(snapshot.docs.map((doc) => doc.data()))
