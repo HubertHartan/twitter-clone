@@ -22,9 +22,15 @@ function Feed() {
     );
 
   */
+
+  /*db.collection("posts").onSnapshot((snapshot) => 
+    setPosts(snapshot.docs.map((doc) => doc.data()))
+    );
+  */
+
   useEffect(()=>{
-    try{db.collection("posts").onSnapshot((snapshot) => 
-      setPosts(snapshot.docs.map((doc) => doc.data()))
+    try{postRef.onSnapshot((snapshot) =>
+    setPosts(snapshot.docs.map((doc) => doc.data()))
     );
   }catch(err){
     console.error(err);
