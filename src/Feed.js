@@ -28,6 +28,7 @@ function Feed() {
     );
   */
   //check look into getting data from firestore
+  //onSnapshot not working
   useEffect(()=>{
     try{postRef.onSnapshot((snapshot) =>
     setPosts(snapshot.docs.map((doc) => doc.data()))
