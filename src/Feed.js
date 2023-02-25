@@ -27,8 +27,10 @@ function Feed() {
     setPosts(snapshot.docs.map((doc) => doc.data()))
     );
   */
-  //check look into getting data from firestore
+
   //onSnapshot not working
+  //check look into getting data from firestore
+
   useEffect(()=>{
     try{postRef.onSnapshot((snapshot) =>
     setPosts(snapshot.docs.map((doc) => doc.data()))
