@@ -30,6 +30,7 @@ function Feed() {
 
   //onSnapshot not working
   //check look into getting data from firestore
+  //test
 
   useEffect(()=>{
     try{postRef.onSnapshot((snapshot) =>
