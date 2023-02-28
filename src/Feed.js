@@ -13,24 +13,27 @@ function Feed() {
   //Investigate browser console logs and find the correct method of rendering posts
   //incorrect and outdated methods used in current implementation
   
-
-  const postRef = collection(db,"posts")
-  //check how to map collection
   
   /*postRef.onSnapshot((snapshot) =>
     setPosts(snapshot.docs.map((doc) => doc.data()))
     );
 
+    current implementation
   */
 
   /*db.collection("posts").onSnapshot((snapshot) => 
     setPosts(snapshot.docs.map((doc) => doc.data()))
     );
+
+    previous implementation
   */
 
   //onSnapshot not working
   //check look into getting data from firestore
 
+
+  const postRef = collection(db,"posts")
+  //check how to map collection
 
   useEffect(()=>{
     try{postRef.onSnapshot((snapshot) =>
