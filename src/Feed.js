@@ -34,6 +34,7 @@ function Feed() {
 
   const postRef = collection(db,"posts")
   //check how to map collection
+  //maybe getdocs then map those docs instead
 
   useEffect(()=>{
     try{postRef.onSnapshot((snapshot) =>
