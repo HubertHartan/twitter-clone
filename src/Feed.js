@@ -28,13 +28,12 @@ function Feed() {
     previous implementation
   */
 
-  //onSnapshot not working
-  //check look into getting data from firestore
 
 
   const postRef = collection(db,"posts")
   //check how to map collection
   //maybe getdocs then map those docs instead
+  
  
 
   useEffect(()=>{
