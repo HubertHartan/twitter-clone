@@ -21,13 +21,6 @@ function Feed() {
     current implementation
   */
 
-  /*db.collection("posts").onSnapshot((snapshot) => 
-    setPosts(snapshot.docs.map((doc) => doc.data()))
-    );
-
-    previous implementation
-  */
-
 
 
   const postRef = collection(db,"posts")
