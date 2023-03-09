@@ -25,6 +25,7 @@ function Feed() {
 
   const postRef = collection(db,"posts")
   //check how to map collection
+  //see bookmarks
 
  
   
