@@ -26,6 +26,7 @@ function Feed() {
   const postRef = collection(db,"posts")
   //the mapping is the problem
   //snapshot is also the problem, it doesn't exist in current firestore library
+  //take a look at bookmarked page
 
 
   useEffect(()=>{
