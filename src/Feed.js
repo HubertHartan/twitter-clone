@@ -25,7 +25,7 @@ function Feed() {
 
   const postRef = collection(db,"posts")
   //the mapping is the problem
-
+  //figure out what to replace snapshot with
 
 
 
